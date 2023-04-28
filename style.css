@@ -1,3 +1,12 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
 *,
 *::before,
 *::after {
@@ -58,33 +67,101 @@ h6 {
   overflow-wrap: break-word;
 }
 
-body{
-    font-family: 'Kumbh Sans', sans-serif;
-    height: 100vh;
-    /* position: relative; */
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-cyan);
 }
 
-.bg-pattern-top{
-    position: absolute;
-    bottom: 50%;
-    left: 0%;
+.bg-pattern-top {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  z-index: -1;
 }
-.bg-pattern-bottom{
-    position: absolute;
+.bg-pattern-bottom {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  /* .bg-pattern-top {
+    bottom: 10%;
+    left: -20%;
+    margin-left: -70%;
+  }
+  .bg-pattern-bottom {
     top: 50%;
-    right:0;
+    right: -30%;
+    
+  } */
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
+.profile-card {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  max-width: 500px;
+  box-shadow: 3px 3px 5rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-inline: 1rem;
 }
 
-.profile-card{
-    background-color: white;
+.banner-avatar {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.avatar {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.4rem solid white;
 }
 
+.title {
+  font-size: 1.2rem;
+  font-weight: var(--fw-700);
+}
+
+.title > span {
+  color: var(--Dark-grayish-blue);
+  font-weight: var(--fw-400);
+}
+
+.place {
+  color: var(--Dark-grayish-blue);
+}
+
+hr {
+  height: 1px;
+  background-color: var(--Dark-grayish-blue);
+  border: none;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+.social > h2 {
+  font-size: 1.3rem;
+}
+
+.social > p {
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  color: var(--Dark-grayish-blue);
+}
