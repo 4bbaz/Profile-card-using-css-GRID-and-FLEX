@@ -68,6 +68,13 @@ h6 {
 }
 
 body {
+  background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 35vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: hsl(185deg, 75%, 39%);
+}
+
+body {
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
   height: 100vh;
@@ -75,34 +82,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--Dark-cyan);
 }
 
-.bg-pattern-top {
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  z-index: -1;
-}
-.bg-pattern-bottom {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  z-index: -1;
-}
-
-@media (max-width: 600px) {
-  /* .bg-pattern-top {
-    bottom: 10%;
-    left: -20%;
-    margin-left: -70%;
-  }
-  .bg-pattern-bottom {
-    top: 50%;
-    right: -30%;
-    
-  } */
-}
 
 .profile-card {
   display: grid;
