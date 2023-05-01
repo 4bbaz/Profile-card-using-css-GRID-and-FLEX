@@ -1,0 +1,56 @@
+@use "../util" as u;
+
+.profile {
+  display: grid;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &__banner {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 6px solid white;
+  }
+
+  .title {
+    span {
+      font-weight: u.$fw-400;
+      color: var(--Dark-grayish-blue);
+    }
+  }
+
+  hr {
+    height: 1px;
+    background-color: var(--Dark-grayish-blue);
+    border: none;
+    width: 100%;
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 1rem;
+
+    .social {
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}

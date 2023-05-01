@@ -1,0 +1,24 @@
+// font weight
+$fw-400: 400;
+$fw-700: 700;
+
+h1,
+h2,
+h3 {
+  font-weight: $fw-700;
+  line-height: 1.1;
+  margin-top: 0;
+  font-size: larger;
+}
+
+p,
+span {
+  margin-top: 0;
+  color: var(--Dark-grayish-blue);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

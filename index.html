@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,21 +16,24 @@
       href="./images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Profile card</title>
   </head>
   <body>
     <main class="container">
-      <div class="profile-card">
-        <div class="banner-avatar">
-          <div class="banner">
-            <img src="./images/bg-pattern-card.svg" alt="" />
-          </div>
-          <div class="avatar">
+      <div class="profile">
+        <div class="profile__banner">
+          <img src="./images/bg-pattern-card.svg" alt="" />
+          <div class="profile__avatar">
             <img src="./images/image-victor.jpg" alt="vactor" />
           </div>
         </div>
-
-        <div class="title">Victor Crest <span>26</span></div>
+        <h1 class="title">Victor Crest <span>26</span></h1>
         <p class="place">London</p>
         <hr />
         <div class="flex-wrap">
